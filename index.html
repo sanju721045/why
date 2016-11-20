@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" id="theamstyle" />
+    <script src="scripts/jquery-2.1.0.js"></script>
+    <script src="scripts/chui-3.8.5.min.js"></script>
+    <script src="scripts/angular.min (1).js"></script>
+    <title>Memo</title>
+    <script>
+            var myapp = angular.module("Myapp", []);
+
+            myapp.controller("Fun", function ($scope) {
+
+
+            });
+
+
+
+    </script>
+
+</head>
+<body ng-app="Myapp" ng-controller="Fun">
+    <nav>
+        <div>
+            <img id="img1" src="css/download.jpg" />
+            <h2>Memo(<span id="numb">0</span>)</h2>
+        </div>
+
+        <div id="btndiv">
+            <button type="button" id="btn">ADD</button>
+        </div>
+    </nav>
+    <article id="main" class="current">
+        <section class="mainsection">
+            <div id="showddd"></div>
+        </section>
+    </article>
+    <nav>
+
+        <button type="button" class="button back modifybtn"></button>
+
+        <button type="button" class="Cancelbtn">Cancel</button>
+        <button type="button" class="Savvebtn">Save</button>
+    </nav>
+
+    <article id="art">
+        <div id="secondnav">
+            <button class="deletebtn" type="button">D</button>
+            <button class="morebtn" type="button">M</button>
+        </div>
+        <div id="toggleseconddiv" style="display:none;">
+            <button class="deletebtn2" type="button">DD</button>
+            <button class="colorbtn" type="button">Co</button>
+            <button class="lockbtn" type="button">L</button>
+            <button class="Togglebtn2" type="button">T</button>
+        </div>
+        <section class="mainsection">
+            <div id="rr" contenteditable style="background-color:white; height:600px; font-size:23px; padding-top:10px; font-style:italic;"> <span id="spantext">Please Enter the Text</span></div>
+        </section>
+    </article>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
